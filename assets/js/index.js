@@ -665,8 +665,10 @@ function choosePlanet(planets) {
   });
 }
 
-async function fire() {
-  await Promise.all([getTodaysAPOD(), getLanches(), getAllPlanets()]);
+function fire() {
+  getTodaysAPOD();
+  getLanches();
+  getAllPlanets();
 }
 
 fire();
